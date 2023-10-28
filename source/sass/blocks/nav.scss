@@ -1,0 +1,56 @@
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.nav__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 15px ;
+}
+
+.nav__item-link {
+  position: relative;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  display: block;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    font-size: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-sapphire;
+    border-bottom: 1px solid $color-sapphire;
+  }
+
+  &[disabled] {
+    color: $color-ghost-white;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+}

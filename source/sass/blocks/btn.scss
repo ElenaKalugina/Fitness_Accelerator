@@ -1,17 +1,29 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 18px 48px;
+  width: 260px;
 
-  color: $color-default-white;
+  color: $color-default-black;
+  text-align: center;
+  font-family: $ff-placeholder;
+  font-size: 18px;
+  line-height: 100%;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: inherit;
+  border: 1px solid rgba(16, 38, 84, 0.20);
   cursor: pointer;
+  //transition: opacity $trans-default;
 
-  transition: opacity $trans-default;
+  &--intro {
+    width: 230px;
+    padding: 27px 44px;
+    border: 2px solid $color-default-white;
 
-  &--red {
-    background-color: $color-torch-red;
+    color: $color-default-white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
   }
 
   &:disabled {
