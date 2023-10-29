@@ -1,9 +1,9 @@
 .btn {
   display: inline-flex;
   padding: 18px 48px;
-  width: 260px;
 
   color: $color-default-black;
+  display: block;
   text-align: center;
   font-family: $ff-placeholder;
   font-size: 18px;
@@ -15,8 +15,7 @@
   //transition: opacity $trans-default;
 
   &--intro {
-    width: 230px;
-    padding: 27px 44px;
+    padding: 27px 20px;
     border: 2px solid $color-default-white;
 
     color: $color-default-white;
@@ -24,6 +23,17 @@
     font-weight: 700;
     letter-spacing: 0.6px;
     text-transform: uppercase;
+    min-width: 230px;
+
+    @include vp-1365 {
+      padding: 21px 20px;
+      min-width: 185px;
+    }
+
+    @include vp-767 {
+
+      width: 100%;
+    }
   }
 
   &:disabled {
