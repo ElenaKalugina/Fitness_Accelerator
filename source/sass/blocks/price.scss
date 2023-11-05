@@ -19,6 +19,10 @@
 }
 
 .price__type-container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.price__type-container{
   @include vp-1365 {
     padding-left: 119px;
     padding-right: 119px;
@@ -96,9 +100,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
   column-gap: 40px;
   grid-template-columns: repeat(3, 1fr);
+  display: none;
+
+  &--current {
+    display: grid;
+  }
 
   @include vp-1365 {
     grid-template-columns: 1fr;
@@ -111,6 +119,9 @@
 }
 
 .price__type-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 360px;
 
   @include vp-1365 {

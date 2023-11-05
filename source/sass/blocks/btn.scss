@@ -37,7 +37,7 @@
   }
 
   &--price {
-    padding: 27px 20px;
+    padding: 27px 42px;
     border: 2px solid $color-default-black;
 
     color: $color-default-black;
@@ -45,10 +45,10 @@
     font-weight: 700;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    min-width: 205px;
+    max-width: 205px;
 
     @include vp-1365 {
-      padding: 21px 20px;
+      padding: 21px 42px;
     }
 
     @include hover-focus {

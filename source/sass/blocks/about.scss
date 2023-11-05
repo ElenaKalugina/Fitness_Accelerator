@@ -6,7 +6,8 @@
 
 .about__container {
   padding: 120px 0;
-  min-width: 1160px;
+  max-width: 1160px;
+  margin: 0 auto;
 
   display: grid;
   grid-template-columns: 31% 57%;
