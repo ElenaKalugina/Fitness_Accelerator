@@ -1,0 +1,154 @@
+.price {
+  position: relative;
+  z-index: -1;
+  background-color: $color-ghost-white;
+  padding: 0;
+  padding-top: 126px;
+  padding-bottom: 121px;
+  overflow-x: hidden;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 73px;
+    padding-bottom: 70px;
+  }
+}
+
+.price__type-container{
+  @include vp-1365 {
+    padding-left: 119px;
+    padding-right: 119px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.price__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: $ff-title;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 1.62px;
+  text-align: center;
+
+  @include vp-1365 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 23px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 10px;
+  }
+}
+
+.price__period-btn-list {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  width: max-content;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+
+  @include vp-1365 {
+    gap: 54px;
+    margin-bottom: 46px;
+  }
+
+  @include vp-767 {
+    gap: 45px;
+    margin-bottom: 35px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $color-grey-20;
+    left: 0;
+    bottom: -2px;
+  }
+}
+
+.price__type-container {
+  position: relative;
+}
+
+.price__type-list {
+  position: relative;
+  z-index: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    row-gap: 42px;
+  }
+
+  @include vp-767 {
+    row-gap: 35px;
+  }
+}
+
+.price__type-item {
+  width: 360px;
+
+  @include vp-1365 {
+    width: 440px;
+    justify-self: center;
+  }
+
+  @include vp-767 {
+    width: 290px;
+  }
+}
+
+.price__decor {
+  margin: 0;
+  display: block;
+  position: absolute;
+  transform: rotate(150deg);
+  bottom: -216px;
+  right: -212px;
+  z-index: -1;
+
+  @include vp-1365 {
+    bottom: -203px;
+    right: -59px;
+  }
+
+  img {
+    width: 321px;
+    height: 384px;
+
+    @include vp-1365 {
+      width: 275px;
+      height: 328px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+

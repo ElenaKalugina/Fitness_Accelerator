@@ -1,5 +1,5 @@
 .btn {
-  display: inline-flex;
+  //display: inline-flex;
   padding: 18px 48px;
 
   color: $color-default-black;
@@ -36,8 +36,38 @@
     }
   }
 
+  &--price {
+    padding: 27px 20px;
+    border: 2px solid $color-default-black;
+
+    color: $color-default-black;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    min-width: 205px;
+
+    @include vp-1365 {
+      padding: 21px 20px;
+    }
+
+    @include hover-focus {
+      border-image: $button-gradient;
+      border-image-slice: 1;
+      background: $button-gradient;
+      color: $color-default-white;
+    }
+
+    @include active {
+      border-image: $button-gradient;
+      border-image-slice: 1;
+      background: $button-gradient;
+      color: $color-default-white-70;
+    }
+  }
+
   &:disabled {
-    opacity: 0.5;
+    opacity: 0.3;
 
     pointer-events: none;
   }

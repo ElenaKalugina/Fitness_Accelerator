@@ -1,5 +1,11 @@
-.about {
-  padding: 120px 103px;
+.about .container {
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.about__container {
+  padding: 120px 0;
   min-width: 1160px;
 
   display: grid;
@@ -7,19 +13,20 @@
   column-gap: 140px;
 
   @include vp-1365 {
-    padding: 100px 45px;
+    padding: 100px 0;
     min-width: 100%;
     grid-template-columns: 1fr;
     column-gap: 0;
   }
 
-    @include vp-767 {
-    padding: 70px 0;
-    row-gap: 40px;
-   }
+  @include vp-767 {
+  padding: 70px 0;
+  row-gap: 40px;
+  }
+
 }
 
-.about__container {
+.about__info-container {
   min-height: 516px;
   grid-column: 1/2;
   grid-row: 1/2;
