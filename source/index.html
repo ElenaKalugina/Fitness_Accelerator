@@ -10,13 +10,12 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
-  <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font">
-  <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font">
-  <link rel="preload" href="fonts/rouble.woff2" as="font">
-</head>
+  <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  </head>
 
 <body>
   <div class="wrapper">
@@ -55,14 +54,14 @@
                 <li class="intro__item">Групповые занятия</li>
                 <li class="intro__item">Кардио-зона</li>
               </ul>
-              <a class="intro__btn btn btn--intro" href="#">Купить абонемент</a>
+              <a class="intro__btn btn btn--white" href="#">Купить абонемент</a>
             </div>
             <div class="intro__img">
               <picture>
                 <source type="image/webp" media="(max-width: 1365px)"
                   srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x" width="324" height="390">
                 <source type="image/jpg" media="(max-width: 1365px)"
-                  srcset="img/intro/intro-tablet.jpg 1x, img/intro/intro-tablet.jpg 2x" width="324" height="390">
+                  srcset="img/intro/intro-tablet.jpg 1x, img/intro/intro-tablet@2x.jpg 2x" width="324" height="390">
 
                 <source type="image/webp" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x"
                   width="500" height="524">
@@ -156,7 +155,7 @@
               </li>
             </ul>
             <div class="price__type-container">
-              <ul class="price__type-list " data-type="1">
+              <ul class="price__type-list price__type-list--current" data-type="1">
                 <li class="price__type-item type-card">
                   <h3 class="type-card__title">С тренером</h3>
                   <p class="type-card__work-time">12 занятий</p>
@@ -233,7 +232,7 @@
                   <a class="type-card__btn btn btn--price" href="#">Купить абонемент</a>
                 </li>
               </ul>
-              <ul class="price__type-list price__type-list--current" data-type="3">
+              <ul class="price__type-list" data-type="3">
                 <li class="price__type-item type-card">
                   <h3 class="type-card__title">С тренером</h3>
                   <p class="type-card__work-time">12 занятий</p>
@@ -262,7 +261,7 @@
                   <h3 class="type-card__title">Полный день</h3>
                   <p class="type-card__work-time">с 8:00 до 22:00</p>
 
-                  <p class="type-card__price" data-price="32 400">32 400
+                  <p class="type-card__price" data-price="32400">32400
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/svg/ruble.svg" width="24" height="33">
                       <img src="img/svg/ruble.svg" width="30" height="42" alt="Рубль.">
@@ -285,14 +284,85 @@
                 </picture>
               </p>
             </div>
-
           </div>
         </div>
       </section>
-    </main>
-    <footer>
-      <div class="container"></div>
-    </footer>
+      <section class="games">
+        <div class="container">
+          <div class="games__container">
+            <div class="games__request-container">
+              <div class="games__declaration">
+                <h2 class="games__title">Super games</h2>
+                <dl class="games__date">
+                  <dt>Дата</dt>
+                  <dd>7<span>Марта<br>2019</span>
+                  </dd>
+                </dl>
+                <dl class="games__time">
+                  <dt>Время</dt>
+                  <dd>12:00</dd>
+                </dl>
+              </div>
+              <p class="games__annotation">Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a class="games__btn btn btn--white" href="#">Заполнить заявку</a>
+            </div>
+            <div class="games__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/games/games-mobile.webp 1x, img/games/games-mobile@2x.webp 2x" width="290" height="292">
+                <source type="image/jpg" media="(max-width: 767px)"
+                  srcset="img/games/games-mobile.jpg 1x, img/games/games-mobile@2x.jpg 2x" width="290" height="292">
+
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/games/games-tablet.webp 1x, img/games/games-tablet@2x.webp 2x" width="386" height="324">
+                <source type="image/jpg" media="(max-width: 1365px)"
+                  srcset="img/games/games-tablet.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="386" height="324">
+
+                <source type="image/webp" srcset="img/games/games-desktop.webp 1x, img/games/games-desktop@2x.webp 2x"
+                  width="660" height="500">
+                <img src="img/games/games-desktop.jpg" srcset="img/games/games-desktop@2x.jpg 2x" width="660"
+                  height="500" alt="Спортсмен.">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="jury">
+        <div class="container">
+          <h2 class="jury__title">Жюри</h2>
+          <div class="jury__container">
+            <button class="jury-btn jury-btn--prev" type="button" aria-label="Предыдущий."></button>
+            <ul class="jury__list">
+              <li class="jury__item">
+                <h3 class="jury__name">Анна Павлова</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/games/games-mobile.webp 1x, img/games/games-mobile@2x.webp 2x" width="290" height="292">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/games/games-mobile.jpg 1x, img/games/games-mobile@2x.jpg 2x" width="290" height="292">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/games/games-tablet.webp 1x, img/games/games-tablet@2x.webp 2x" width="386" height="324">
+                    <source type="image/jpg" media="(max-width: 1365px)"
+                      srcset="img/games/games-tablet.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="386" height="324">
+
+                    <source type="image/webp" srcset="img/games/games-desktop.webp 1x, img/games/games-desktop@2x.webp 2x"
+                      width="660" height="500">
+                    <img src="img/games/games-desktop.jpg" srcset="img/games/games-desktop@2x.jpg 2x" width="660"
+                      height="500" alt="Тренер Анна Павлова.">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+            <button class="jury-btn jury-btn--next" type="button" aria-label="Следующий."></button>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>
