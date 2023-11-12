@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
-  <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic-600.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic-800.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic-regular.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic-700.woff2" as="font"  type="font/woff2" crossorigin="anonymous">
   </head>
 
 <body>
@@ -54,7 +54,7 @@
                 <li class="intro__item">Групповые занятия</li>
                 <li class="intro__item">Кардио-зона</li>
               </ul>
-              <a class="intro__btn btn btn--white" href="#">Купить абонемент</a>
+              <a class="intro__btn btn btn--white" href="#price">Купить абонемент</a>
             </div>
             <div class="intro__img">
               <picture>
@@ -139,7 +139,7 @@
         </div>
 
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="container">
           <div class="price__container">
             <h2 class="price__title">Абонементы</h2>
@@ -329,33 +329,262 @@
       </section>
       <section class="jury">
         <div class="container">
-          <h2 class="jury__title">Жюри</h2>
           <div class="jury__container">
-            <button class="jury-btn jury-btn--prev" type="button" aria-label="Предыдущий."></button>
+            <h2 class="jury__title">Жюри</h2>
+            <button class="jury-btn jury-btn--prev" type="button" aria-label="Предыдущий слайд.">
+              <svg width="18" height="34">
+                <use href="img/sprite.svg#icon-prev"></use>
+              </svg>
+            </button>
             <ul class="jury__list">
               <li class="jury__item">
                 <h3 class="jury__name">Анна Павлова</h3>
                 <div class="jury__img">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/games/games-mobile.webp 1x, img/games/games-mobile@2x.webp 2x" width="290" height="292">
+                      srcset="img/jury/jury-desktop1.webp 1x, img/jury/jury-desktop1@2x.webp 2x" width="226" height="274">
                     <source type="image/jpg" media="(max-width: 767px)"
-                      srcset="img/games/games-mobile.jpg 1x, img/games/games-mobile@2x.jpg 2x" width="290" height="292">
+                      srcset="img/jury/jury-desktop1.jpg 1x, img/jury/jury-desktop1@2x.jpg 2x" width="226" height="274">
 
                     <source type="image/webp" media="(max-width: 1365px)"
-                      srcset="img/games/games-tablet.webp 1x, img/games/games-tablet@2x.webp 2x" width="386" height="324">
-                    <source type="image/jpg" media="(max-width: 1365px)"
-                      srcset="img/games/games-tablet.jpg 1x, img/games/games-tablet@2x.jpg 2x" width="386" height="324">
+                      srcset="img/jury/jury-desktop1.webp 1x, img/jury/jury-desktop1@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop1.jpg 1x, img/jury/jury-desktop1@2x.jpg 2x" width="268" height="260">
 
-                    <source type="image/webp" srcset="img/games/games-desktop.webp 1x, img/games/games-desktop@2x.webp 2x"
-                      width="660" height="500">
-                    <img src="img/games/games-desktop.jpg" srcset="img/games/games-desktop@2x.jpg 2x" width="660"
-                      height="500" alt="Тренер Анна Павлова.">
+                    <source type="image/webp" srcset="img/jury/jury-desktop1.webp 1x, img/jury/jury-desktop1@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop1.jpg" srcset="img/jury/jury-desktop1@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Анна Павлова.">
                   </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Анна Павлова</p>
+                  <p class="jury-description__sport">Pilates</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">Сертифицированный тренер Les Mills</li>
+                    <li class="jury-description__item">Финалистка соревнований по фитнесу</li>
+                    <li class="jury-description__item">Опыт — 7 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__item">
+                <h3 class="jury__name">Алексей Лавров</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop2.webp 1x, img/jury/jury-desktop2@2x.webp 2x" width="226" height="274">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop2.jpg 1x, img/jury/jury-desktop2@2x.jpg 2x" width="226" height="274">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury/jury-desktop2.webp 1x, img/jury/jury-desktop2@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop2.jpg 1x, img/jury/jury-desktop2@2x.jpg 2x" width="268" height="260">
+
+                    <source type="image/webp" srcset="img/jury/jury-desktop2.webp 1x, img/jury/jury-desktop2@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop2.jpg" srcset="img/jury/jury-desktop2@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Алексей Лавров.">
+                  </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Алексей Лавров</p>
+                  <p class="jury-description__sport">CrossFit</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">Certified Level 2 Trainer</li>
+                    <li class="jury-description__item">КМС по CrossFit </li>
+                    <li class="jury-description__item">Призер турнира Siberian Power Show Challenge 2019 (team)</li>
+                    <li class="jury-description__item">Опыт — 5 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__item">
+                <h3 class="jury__name">Александр Пашков</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop3.webp 1x, img/jury/jury-desktop3@2x.webp 2x" width="226" height="274">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop3.jpg 1x, img/jury/jury-desktop3@2x.jpg 2x" width="226" height="274">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury/jury-desktop3.webp 1x, img/jury/jury-desktop3@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop3.jpg 1x, img/jury/jury-desktop3@2x.jpg 2x" width="268" height="260">
+
+                    <source type="image/webp" srcset="img/jury/jury-desktop3.webp 1x, img/jury/jury-desktop3@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop3.jpg" srcset="img/jury/jury-desktop3@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Александр Пашков.">
+                  </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Александр Пашков</p>
+                  <p class="jury-description__sport">CrossFit</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">Certified Level 3 Trainer</li>
+                    <li class="jury-description__item">Победитель чемпионата России по CrossFit </li>
+                    <li class="jury-description__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__item">
+                <h3 class="jury__name">Мария Кетова</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop4.webp 1x, img/jury/jury-desktop4@2x.webp 2x" width="226" height="274">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop4.jpg 1x, img/jury/jury-desktop4@2x.jpg 2x" width="226" height="274">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury/jury-desktop4.webp 1x, img/jury/jury-desktop4@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop4.jpg 1x, img/jury/jury-desktop4@2x.jpg 2x" width="268" height="260">
+
+                    <source type="image/webp" srcset="img/jury/jury-desktop4.webp 1x, img/jury/jury-desktop4@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop4.jpg" srcset="img/jury/jury-desktop4@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Мария Кетова.">
+                  </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Мария Кетова</p>
+                  <p class="jury-description__sport">CrossFit</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">CrossFit Level 1 Trainer</li>
+                    <li class="jury-description__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury-description__item">CrossFit Specialty Course: Gymnastics</li>
+                    <li class="jury-description__item">Опыт — 8 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__item">
+                <h3 class="jury__name">Соколова Наталья</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile5.webp 1x, img/jury/jury-mobile5@2x.webp 2x" width="226" height="274">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile5.jpg 1x, img/jury/jury-mobile5@2x.jpg 2x" width="226" height="274">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury/jury-desktop5.webp 1x, img/jury/jury-desktop5@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop5.jpg 1x, img/jury/jury-desktop5@2x.jpg 2x" width="268" height="260">
+
+                    <source type="image/webp" srcset="img/jury/jury-desktop5.webp 1x, img/jury/jury-desktop5@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop5.jpg" srcset="img/jury/jury-desktop5@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Соколова Наталья.">
+                  </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Соколова Наталья</p>
+                  <p class="jury-description__sport">Бокс</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">Мастер спорта России по боксу</li>
+                    <li class="jury-description__item">Многократная чемпионка Москвы</li>
+                    <li class="jury-description__item">Опыт — 12 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__item">
+                <h3 class="jury__name">Александр Плюшкин</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile6.webp 1x, img/jury/jury-mobile6@2x.webp 2x" width="226" height="274">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile6.jpg 1x, img/jury/jury-mobile6@2x.jpg 2x" width="226" height="274">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury/jury-desktop6.webp 1x, img/jury/jury-desktop6@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop6.jpg 1x, img/jury/jury-desktop6@2x.jpg 2x" width="268" height="260">
+
+                    <source type="image/webp" srcset="img/jury/jury-desktop6.webp 1x, img/jury/jury-desktop6@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop6.jpg" srcset="img/jury/jury-desktop6@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Александр Плюшкин.">
+                  </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Александр Плюшкин</p>
+                  <p class="jury-description__sport">CrossFit</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">Действующий кроссфит атлет</li>
+                    <li class="jury-description__item">Призер Marseille Throwdown 2019 (team)</li>
+                    <li class="jury-description__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__item">
+                <h3 class="jury__name">Григорий Грибенюк</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile7.webp 1x, img/jury/jury-mobile7@2x.webp 2x" width="226" height="274">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile7.jpg 1x, img/jury/jury-mobile7@2x.jpg 2x" width="226" height="274">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury/jury-desktop7.webp 1x, img/jury/jury-desktop7@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop7.jpg 1x, img/jury/jury-desktop7@2x.jpg 2x" width="268" height="260">
+
+                    <source type="image/webp" srcset="img/jury/jury-desktop7.webp 1x, img/jury/jury-desktop7@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop7.jpg" srcset="img/jury/jury-desktop7@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Григорий Грибенюк.">
+                  </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Григорий Грибенюк</p>
+                  <p class="jury-description__sport">CrossFit</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">Действующий кроссфит атлет</li>
+                    <li class="jury-description__item">Призер Yousteel Beach Cup 2018</li>
+                    <li class="jury-description__item">Опыт — 7 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury__item">
+                <h3 class="jury__name">Дмитрий Мартынец</h3>
+                <div class="jury__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile8.webp 1x, img/jury/jury-mobile8@2x.webp 2x" width="226" height="274">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-mobile8.jpg 1x, img/jury/jury-mobile8@2x.jpg 2x" width="226" height="274">
+
+                    <source type="image/webp" media="(max-width: 1365px)"
+                      srcset="img/jury/jury-desktop8.webp 1x, img/jury/jury-desktop8@2x.webp 2x" width="268" height="260">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/jury/jury-desktop8.jpg 1x, img/jury/jury-desktop8@2x.jpg 2x" width="268" height="260">
+
+                    <source type="image/webp" srcset="img/jury/jury-desktop8.webp 1x, img/jury/jury-desktop8@2x.webp 2x"
+                      width="260" height="294">
+                    <img src="img/jury/jury-desktop8.jpg" srcset="img/jury/jury-desktop8@2x.jpg 2x" width="260"
+                      height="294" alt="Тренер Дмитрий Мартынец.">
+                  </picture>
+                </div>
+                <div class="jury__description jury-description">
+                  <p class="jury-description__name">Дмитрий Мартынец</p>
+                  <p class="jury-description__sport">CrossFit</p>
+                  <ul class="jury-description__list">
+                    <li class="jury-description__item">CrossFit Level 1 Trainer</li>
+                    <li class="jury-description__item">Тренер проекта Reebok in Parks в Москве</li>
+                    <li class="jury-description__item">Опыт — 8 лет</li>
+                  </ul>
                 </div>
               </li>
             </ul>
-            <button class="jury-btn jury-btn--next" type="button" aria-label="Следующий."></button>
+            <button class="jury-btn jury-btn--next" type="button" aria-label="Следующий слайд.">
+              <svg width="18" height="34">
+                <use href="img/sprite.svg#icon-next"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -370,3 +599,4 @@
 </body>
 
 </html>
+

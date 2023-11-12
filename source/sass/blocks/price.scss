@@ -6,6 +6,7 @@
   padding-top: 126px;
   padding-bottom: 121px;
 
+
   @include vp-1365 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -150,6 +151,7 @@
   img {
     width: 321px;
     height: 384px;
+    overflow: visible;
 
     @include vp-1365 {
       width: 275px;
