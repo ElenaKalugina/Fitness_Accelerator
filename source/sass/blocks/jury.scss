@@ -42,7 +42,7 @@
 .jury__list {
   list-style: none;
   margin: 0;
-  padding:0;
+  padding: 0;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: hidden;
@@ -63,6 +63,7 @@
     .jury__name {
       z-index: -1;
     }
+
     .jury__description {
       display: flex;
     }

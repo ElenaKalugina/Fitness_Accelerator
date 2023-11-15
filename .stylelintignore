@@ -1,1 +1,2 @@
 vendor/**/*.css
+source/sass/vendor/**/*.scss

@@ -48,7 +48,6 @@
     grid-template-columns: 38.5% 61.5%;
     justify-self: auto;
   }
-
 }
 
 .intro__city {
@@ -118,7 +117,6 @@
   grid-row: 1/-1;
   align-self: center;
   justify-self: end;
-
 }
 
 .intro__item {
@@ -147,21 +145,20 @@
 .intro__img {
   justify-self: start;
 
-    max-width: 500px;
-    max-height: 524px;
+  max-width: 500px;
+  max-height: 524px;
 
-    @include vp-1365 {
-      max-width: 324px;
-      max-height: 390px;
-    }
-
-    @include vp-767 {
-      display: none;
-    }
+  @include vp-1365 {
+    max-width: 324px;
+    max-height: 390px;
   }
 
-  .intro__img img {
-    max-height: 100%;
-    object-fit: contain;
+  @include vp-767 {
+    display: none;
   }
+}
 
+.intro__img img {
+  max-height: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,267 @@
+.offers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.offers__container {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include vp-1365 {
+    max-width: 678px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+  }
+}
+
+.offers__container h2 {
+  margin: 0;
+  margin-bottom: 70px;
+  font-family: $ff-title;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 1.62px;
+  text-align: center;
+
+  @include vp-1365 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.offers__inner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    gap:30px
+  }
+
+  @include vp-1365 {
+    gap:40px
+  }
+}
+
+.offers__primary-container {
+  display: flex;
+  flex-wrap: nowrap;
+  @include vp-1365 {
+    flex-direction: column;
+  }
+}
+
+.offers__primary-description {
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  max-width: 280px;
+  padding: 45px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include vp-1365 {
+    max-width: 279px;
+    padding: 45px;
+    padding-bottom: 49px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    min-height: 300px;
+    padding-top: 45px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 49px;
+  }
+}
+
+.offers__primary-text {
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.offers__primary-text h3 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 15px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    align-self: center;
+    margin-bottom: 9px;
+  }
+}
+
+.offers__primary-text span {
+  margin: 0;
+  display: block;
+  max-width: max-content;
+  overflow-wrap: anywhere;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 25px;
+
+  @include vp-1365 {
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 64px;
+    align-self: center;
+  }
+}
+
+.offers__primary-text p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.offers__primary-btn {
+  @include vp-767 {
+    align-self: center;
+  }
+}
+
+.offers__primary-img {
+  width: 280px;
+  height: 462px;
+
+  @include vp-1365 {
+    width: 399px;
+    height: 462px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 330px;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+.offers__secondary-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 40px;
+
+  @include vp-1365 {
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+   }
+}
+
+.offers__secondary-item {
+  padding: 28px;
+  padding-top: 23px;
+  padding-bottom: 35px;
+  border: 7px solid transparent;
+  border-image: $border-gradient;
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include vp-1365 {
+    min-height: 213px;
+  }
+
+  @include vp-767 {
+    padding: 40px;
+  }
+}
+
+.offers__secondary-text {
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.offers__secondary-item h3{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 100%;
+
+  @include vp-1365 {
+    font-size: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+.offers__secondary-item p{
+  margin: 0;
+  max-width: fit-content;
+  overflow-wrap: break-word;
+
+  @include vp-767 {
+    display: inline-block;
+    align-self: center;
+    max-width: 160px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.offers__secondary-btn {
+  @include vp-767 {
+    align-self: center;
+  }
+}

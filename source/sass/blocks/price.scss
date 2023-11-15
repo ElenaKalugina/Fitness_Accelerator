@@ -1,6 +1,6 @@
 .price {
   position: relative;
-  z-index: -1;
+ // z-index: -1;
   background-color: $color-ghost-white;
   padding: 0;
   padding-top: 126px;
@@ -18,11 +18,11 @@
   }
 }
 
-.price__type-container{
+.price__type-container {
+  position: relative;
   max-width: 1160px;
   margin: 0 auto;
-}
-.price__type-container{
+
   @include vp-1365 {
     padding-left: 119px;
     padding-right: 119px;
@@ -59,7 +59,7 @@
 
 .price__period-btn-list {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -90,13 +90,9 @@
   }
 }
 
-.price__type-container {
-  position: relative;
-}
-
 .price__type-list {
   position: relative;
-  z-index: 0;
+  z-index: 2;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -141,7 +137,7 @@
   transform: rotate(150deg);
   bottom: -216px;
   right: -212px;
-  z-index: -1;
+  z-index: 1;
 
   @include vp-1365 {
     bottom: -203px;
@@ -163,4 +159,3 @@
     }
   }
 }
-

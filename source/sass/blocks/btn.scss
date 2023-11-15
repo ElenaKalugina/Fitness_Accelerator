@@ -7,9 +7,10 @@
   font-family: $ff-placeholder;
   font-size: 18px;
   line-height: 100%;
+  user-select: none;
 
   background-color: inherit;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid $color-default-black-20;
   cursor: pointer;
 
   &--white {
@@ -47,39 +48,40 @@
       pointer-events: none;
     }
   }
+}
 
-  &--price {
-    padding: 27px 42px;
-    border: 2px solid $color-default-black;
+.btn--price {
+  padding: 27px 42px;
+  border: 2px solid $color-default-black;
 
-    color: $color-default-black;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    max-width: 205px;
+  color: $color-default-black;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  max-width: 205px;
 
-    @include vp-1365 {
-      padding: 21px 42px;
-    }
+  @include vp-1365 {
+    padding: 21px 42px;
+  }
 
-    @include hover-focus {
-      border-image: $button-gradient;
-      border-image-slice: 1;
-      background: $button-gradient;
-      color: $color-default-white;
-    }
+  @include hover-focus {
+    border-image: $button-gradient;
+    border-image-slice: 1;
+    background: $button-gradient;
+    color: $color-default-white;
+  }
 
-    @include active {
-      border-image: $button-gradient;
-      border-image-slice: 1;
-      background: $button-gradient;
-      color: $color-default-white-70;
-    }
+  @include active {
+    border-image: $button-gradient;
+    border-image-slice: 1;
+    background: $button-gradient;
+    color: $color-default-white-70;
+  }
 
-    &:disabled {
-      opacity: 0.3;
-      pointer-events: none;
-    }
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
+

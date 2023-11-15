@@ -7,6 +7,7 @@
   background-color: inherit;
   padding: 10px 0;
   border: none;
+  user-select: none;
 
   @include vp-1365 {
     font-size: 18px;
@@ -34,5 +35,36 @@
     bottom: -2px;
     z-index: 1;
   }
-}
 
+  @include hover-focus {
+    position: relative;
+    color: $color-default-black;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $color-crimson;
+      left: 0;
+      bottom: -2px;
+      z-index: 1;
+    }
+  }
+
+  @include active {
+    position: relative;
+    color: $color-default-black;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $color-crimson;
+      left: 0;
+      bottom: -2px;
+      z-index: 1;
+    }
+  }
+}
