@@ -1,0 +1,71 @@
+.reviews-btn {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  user-select: none;
+
+  @include vp-1365 {
+   // top: 203px;
+  }
+
+  @include vp-767 {
+   // top: 186px;
+    width: 30px;
+    height: 30px;
+
+    & svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
+  &--prev {
+    left: -19px;
+    top: 54%;
+
+    @include vp-1365 {
+      left: -22px;
+      top: 53%;
+    }
+
+    @include vp-767 {
+      left: -7px;
+      top: 54%;
+      transform: translateY(4px);
+    }
+  }
+
+  &--next {
+    right: -19px;
+    top: 54%;
+
+    @include vp-1365 {
+    right: -22px;
+    top: 53%;
+    }
+
+    @include vp-767 {
+      right: -7px;
+      top: 54%;
+      transform: translateY(4px);
+    }
+  }
+
+  @include hover-focus {
+    border-radius: 50%;
+    border-color: $color-default-black;
+  }
+
+  @include active {
+    border-radius: 50%;
+    background-color: $color-default-black;
+    border-color: $color-default-black;
+
+    & svg {
+      color: $color-default-white;
+    }
+  }
+
+}

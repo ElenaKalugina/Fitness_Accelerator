@@ -24,6 +24,10 @@
     height: 1px;
     bottom: -4px;
     left: 0;
+
+    @include vp-767 {
+      bottom: -5px;
+    }
   }
 
   &--white {
