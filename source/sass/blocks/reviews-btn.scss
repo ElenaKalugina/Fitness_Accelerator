@@ -6,12 +6,7 @@
   background-color: transparent;
   user-select: none;
 
-  @include vp-1365 {
-   // top: 203px;
-  }
-
   @include vp-767 {
-   // top: 186px;
     width: 30px;
     height: 30px;
 

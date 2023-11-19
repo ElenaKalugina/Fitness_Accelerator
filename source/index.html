@@ -27,7 +27,7 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav nav">
-          <a class="nav__link" href="#">
+          <a href="#">
             <div class="nav__logo logo">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/svg/logo.svg" width="102" height="22">
@@ -857,8 +857,113 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer" data-test="footer">
+      <div class="footer__form-contact-container">
+        <section class="footer__form form">
+          <div class="form__container">
+            <h2>Бесплатное занятие</h2>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="form__inputs-container">
+                <legend class="visually-hidden">Контактные данные.</legend>
+                <div class="form__input">
+                  <label aria-label="Ваше имя.">
+                    <input type="text" placeholder="Имя" name="client-name" autocomplete="off" required>
+                  </label>
+                  <!--  form__warning для отображения ошибки-->
+                  <p>Мы не можем отправить вас в прошлое.</p>
+                </div>
+                <div class="form__input">
+                  <label aria-label="Ваш номер телефона.">
+                    <input type="tel" placeholder="Телефон" name="client-tel" autocomplete="off" required>
+                  </label>
+                  <p>Мы не можем отправить вас в прошлое.</p>
+                </div>
+              </fieldset>
+              <button class="form__btn btn btn--white btn--form" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="footer__contact contact">
+          <div class="contact__container">
+            <h2>Контакты</h2>
+            <div class="contact__lists">
+              <ul class="contact__list contacts__list--address">
+                <li class="contact__item">
+                  <h3>Адрес:</h3>
+                  <address>
+                    <p>г. Омск, ул. 60 лет Октября, 7</p>
+                  </address>
+                </li>
+                <li class="contact__item">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+              </ul>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <h3>Телефон:</h3>
+                  <a href="tel:+78005555555">8-800-555-55-55</a>
+                </li>
+                <li class="contact__item">
+                  <h3>Email:</h3>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <a href="#">
+              <source media="(max-width: 767px)" srcset="img/svg/logo-footer.svg" width="88" height="15">
+              <source media="(max-width: 1365px)" srcset="img/svg/logo-footer.svg" width="97" height="22">
+              <img src="img/svg/logo-footer.svg" width="107" height="24" alt="Логотип Supergym">
+            </a>
+          </div>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Абонементы</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Тренеры</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-item footer__social-item--vk">
+              <a  href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
+                <svg width="25" height="25" role="img">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--ok" href="https://ok.ru/htmlacademy" aria-label="Одноклассники.">
+                <svg width="25" height="25" role="img">
+                  <use href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--reddit" href="https://www.reddit.com" aria-label="Реддит.">
+                <svg width="25" height="25" role="img">
+                  <use href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 
